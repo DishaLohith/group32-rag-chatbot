@@ -2,9 +2,9 @@
 
 This is the unedited output behind `baseline_results.md`. The 14 questions were asked in one message to a fresh chat with no documents attached, to approximate Condition 1 (no retrieval) of the group's comparison. Scoring against the answer key was done by hand.
 
-- Tool: Claude (new conversation, claude.ai; the response footer reads "Claude is AI and can make mistakes")
+- Tool: Claude (new conversation, claude.ai)
 - Run by: Tejas Gangadhar Gowda (s4235124)
-- Date run: [TEJAS: confirm the date and whether web search was switched off]
+- Date run: not recorded; web search: not recorded
 
 ## Prompt (as sent)
 
