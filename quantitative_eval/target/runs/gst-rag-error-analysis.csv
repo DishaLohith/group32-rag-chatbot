@@ -1,0 +1,15 @@
+query_id,question,expected_label,predicted_label,gold_passages,retrieved_passages,gold_retrieved_top3,classification_correct,error_type
+GST01,Are plain bread rolls GST-free?,GST-free,GST-free,DFL_939,DFL_114;DFL_1344;DFL_939,True,True,Correct
+GST02,Are bread rolls served for consumption in a restaurant taxable?,Taxable,GST-free,DFL_655;ACT_38_3,DFL_1631;DFL_1306;DFL_82,False,False,Retrieval failure
+GST03,Is plain milk GST-free?,GST-free,GST-free,ACT_SCH2_1,ACT_SCH2_1;ACT_SCH2_4;DFL_1586,True,True,Correct
+GST04,Is flavoured chocolate milk taxable?,Taxable,Abstain,DFL_333;ACT_SCH2_2,DFL_333;DFL_335;DFL_196,True,False,Generation failure
+GST05,Is raw chicken GST-free?,GST-free,GST-free,DFL_184,DFL_184;DFL_182;DFL_1535,True,True,Correct
+GST06,Is hot cooked chicken sold as takeaway taxable?,Taxable,GST-free,DFL_180;DFL_411;ACT_38_3,DFL_180;DFL_700;DFL_187,True,False,Generation failure
+GST07,Is chocolate confectionery taxable?,Taxable,GST-free,DFL_196;ACT_SCH1_8,DFL_196;DFL_1047;DFL_1042,True,False,Generation failure
+GST08,Are carbonated soft drinks taxable?,Taxable,GST-free,DFL_733,DFL_733;DFL_208;DFL_525,True,False,Generation failure
+GST09,Is non-alcoholic non-carbonated fruit juice containing at least 90% juice GST-free?,GST-free,GST-free,DFL_1244;ACT_SCH2_12,DFL_1244;DFL_817;DFL_526,True,True,Correct
+GST10,Are plain unsalted raw almonds GST-free?,GST-free,GST-free,DFL_810;DFL_536,DFL_810;DFL_871;DFL_1390,True,True,Correct
+GST11,Are roasted salted almonds taxable?,Taxable,Abstain,DFL_537;DFL_669;ACT_SCH1_16,DFL_581;GSTD2024_1_017;DFL_669,True,False,Generation failure
+GST12,Is unflavoured non-carbonated natural bottled water GST-free?,GST-free,GST-free,DFL_528;ACT_SCH2_14,DFL_528;DFL_836;DFL_526,True,True,Correct
+GST13,Is carbonated mineral water taxable?,Taxable,GST-free,DFL_971,DFL_971;DFL_1455;DFL_208,True,False,Generation failure
+GST14,Are rice cakes GST-free?,GST-free,GST-free,DFL_656,DFL_656;DFL_256;DFL_1594,True,True,Correct

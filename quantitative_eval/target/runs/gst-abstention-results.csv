@@ -1,0 +1,6 @@
+query_id,question,expected_label,prediction,retrieved_passages,evidence_used,evidence_statuses,reason,correct
+ABS01,What is the capital of France?,Abstain,GST-free,DFL_1485;DFL_932;DFL_388,DFL_1485;DFL_932;DFL_388,GST-free;GST-free;GST-free,The retrieved passages containing explicit GST status information consistently classify the relevant products as GST-free.,False
+ABS02,Will it rain in Melbourne tomorrow?,Abstain,Abstain,GSTR2001_8_002;GSTR2001_8_003;GSTD2025_1_045,,,No retrieved passage contained an explicit GST classification.,True
+ABS03,Who won the FIFA World Cup in 2022?,Abstain,GST-free,GSTD2024_1_001;DFL_198;DFL_392,DFL_198;DFL_392,GST-free;GST-free,The retrieved passages containing explicit GST status information consistently classify the relevant products as GST-free.,False
+ABS04,How do I reset my laptop password?,Abstain,Abstain,GSTD2025_1_062;GSTD2002_2_002;GSTD2002_2_004,,,No retrieved passage contained an explicit GST classification.,True
+ABS05,What is the distance from Earth to Mars?,Abstain,GST-free,ACT_38_2;GSTR2001_8_092;GSTR2001_8_021,ACT_38_2,GST-free,The retrieved passages containing explicit GST status information consistently classify the relevant products as GST-free.,False
