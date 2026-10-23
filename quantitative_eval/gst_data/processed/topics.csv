@@ -1,0 +1,15 @@
+topic_id,topic,question_id,question
+GST01,Plain bread rolls,GST01Q01,Are plain bread rolls GST-free?
+GST02,Bread rolls served in restaurant,GST02Q01,Are bread rolls served for consumption in a restaurant taxable?
+GST03,Plain milk,GST03Q01,Is plain milk GST-free?
+GST04,Flavoured chocolate milk,GST04Q01,Is flavoured chocolate milk taxable?
+GST05,Raw chicken,GST05Q01,Is raw chicken GST-free?
+GST06,Hot roast chicken ready to eat,GST06Q01,Is hot cooked chicken sold as takeaway taxable?
+GST07,Chocolate confectionery,GST07Q01,Is chocolate confectionery taxable?
+GST08,Carbonated soft drink,GST08Q01,Are carbonated soft drinks taxable?
+GST09,Fruit juice 90 percent or more,GST09Q01,Is non-alcoholic non-carbonated fruit juice containing at least 90% juice GST-free?
+GST10,Plain unsalted raw almonds,GST10Q01,Are plain unsalted raw almonds GST-free?
+GST11,Roasted salted almonds,GST11Q01,Are roasted salted almonds taxable?
+GST12,Still bottled water,GST12Q01,Is unflavoured non-carbonated natural bottled water GST-free?
+GST13,Sparkling mineral water,GST13Q01,Is carbonated mineral water taxable?
+GST14,Rice cakes,GST14Q01,Are rice cakes GST-free?
