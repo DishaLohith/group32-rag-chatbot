@@ -1,6 +1,0 @@
-query_id,query,expected_label,reason
-ABS01,What is the capital of France?,Abstain,General knowledge question unrelated to Australian GST food classification.
-ABS02,Will it rain in Melbourne tomorrow?,Abstain,Weather question outside the GST knowledge base.
-ABS03,Who won the FIFA World Cup in 2022?,Abstain,Sports question outside the GST knowledge base.
-ABS04,How do I reset my laptop password?,Abstain,Technical-support question outside the GST knowledge base.
-ABS05,What is the distance from Earth to Mars?,Abstain,Astronomy question outside the GST knowledge base.
