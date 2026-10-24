@@ -1,8 +1,8 @@
 # Baseline Test — No-Retrieval LLM vs. GST Test Set
 
-Tested a general-purpose LLM (no document retrieval, no grounding) against our 14-item test set to establish Condition 1 of our 3-way comparison (no-retrieval LLM vs. adapted Walert vs. our own system). The unedited prompt and response are in `baseline_raw_response.md`.
+A general-purpose LLM (no document retrieval) was asked all 14 test questions to establish Condition 1 of the three-way comparison. The unedited prompt and response are in `baseline_raw_response.md`.
 
-| # | Product | Expected Answer | Baseline Answer | Correct? | Cited Specific Source? |
+| # | Product | Expected (at time of run) | Baseline Answer | Correct? | Cited Specific Source? |
 |---|---|---|---|---|---|
 | 1 | Bread rolls (supermarket) | GST-free | GST-free | Yes | No |
 | 2 | Bread rolls (restaurant) | Taxable | Taxable | Yes | No |
@@ -15,10 +15,20 @@ Tested a general-purpose LLM (no document retrieval, no grounding) against our 1
 | 9 | Fruit juice ≥90% | GST-free | GST-free | Yes | No |
 | 10 | Raw almonds | GST-free | GST-free | Yes | No |
 | 11 | Roasted salted almonds | Taxable | Taxable | Yes | No |
-| 12 | Still bottled water | GST-free | Taxable | Disagreement | No |
+| 12 | Still bottled water | GST-free | Taxable | No | No |
 | 13 | Sparkling water | Taxable | Taxable | Yes | No |
-| 14 | Rice cakes (contested) | Abstain | Hedged, no clean abstention | Partial | No |
+| 14 | Rice cakes | Abstain | Hedged | Partial | No |
 
-**Key finding:** 12/14 correct classifications, but zero specific provision citations across all 14 responses, and one direct disagreement with our source material (bottled water). This demonstrates why classification accuracy alone is insufficient for this use case — a business needs traceable, verifiable answers, which requires retrieval grounding against real ATO documents rather than relying on general model knowledge.
+## Results on items 1–13 (all three conditions)
 
-**Note on item 14:** This baseline was run on the original GST14 wording ("Rice cakes", expected answer: abstain). The group later revised GST14 to "rice cakes made principally from compressed cereal" (expected GST-free); see the revision note in `test_set.md`. The results above are unchanged and describe the original item.
+| Metric | Baseline (no retrieval) | Adapted Walert | Our system |
+|---|---|---|---|
+| Accuracy | 12/13 (92.3%) | 6/13 (46.2%) | 12/13 (92.3%) |
+| Macro-F1 | 0.921 | 0.353 | 0.962 |
+| Attribution | 0% | 0% | 11/13 (84.6%) |
+
+GST14 separately: baseline hedged (wrong), Walert correct, our system correct.
+
+The baseline was as accurate as our system but cited no specific provision. Retrieval's main gain is traceability.
+
+The table above was scored when GST14's expected answer was Abstain. GST14 is now GST-free (see `test_set.md`).
