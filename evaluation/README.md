@@ -1,14 +1,13 @@
-# Group 32 — GST Classification Evaluation Framework
-
-Evaluation framework for the RAG GST Classification project (COSC2669/COSC2816). It holds the test set, how it is scored, and a no-retrieval baseline, produced as part of the group's multi-condition comparison.
+# Group 32 — GST Classification Evaluation
 
 | File | What it is |
 |---|---|
-| `test_set.md` | The 14-item test set, with a revision note for GST14 |
-| `evaluation_metrics.md` | What each metric tells you and how it is calculated |
-| `baseline_results.md` | Scored results of the no-retrieval LLM baseline |
-| `baseline_raw_response.md` | The unedited prompt and response behind the baseline |
+| `test_set.md` | The 14 test items, answers and sources |
+| `evaluation_metrics.md` | How each metric is calculated |
+| `baseline_results.md` | Baseline results and the three-condition comparison |
+| `baseline_raw_response.md` | Unedited output from the no-retrieval baseline |
+| `GST_results.xlsx` | Spreadsheet used to calculate all scores |
 
-Not in this folder: the retrieval and classification code, the index, and the scripts that produced the nDCG results. Those are the group's pipeline work (Aarya) and live in the main project repo.
+System outputs and ground truth are in `quantitative_eval/`.
 
 Contributor: Tejas Gangadhar Gowda (s4235124)
