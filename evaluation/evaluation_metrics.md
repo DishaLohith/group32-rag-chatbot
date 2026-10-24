@@ -1,11 +1,11 @@
 # Evaluation Metrics — Group 32 GST Classification
 
-Main scores use test items 1–13. GST14 (rice cakes) is reported separately.
+The main scores use GST01–GST13. GST14 (rice cakes) is reported separately.
 
-1. **Accuracy** — share of items where the label (GST-free or Taxable) is correct. An Abstain counts as wrong.
-2. **Macro-F1** — F1 for GST-free and F1 for Taxable, averaged. An Abstain counts as a miss for the correct class.
-3. **Attribution** — share of items where the system's evidence includes at least one gold passage from `quantitative_eval/gst_data/processed/groundtruth.csv`. A system that cites nothing scores 0.
+- **Accuracy** is the percentage of questions answered correctly. An Abstain counts as incorrect.
+- **Macro-F1** is the average of the F1 score for GST-free and the F1 score for Taxable. This gives both labels equal weight. An Abstain counts as a miss for the correct label.
+- **Attribution** measures whether the system's evidence includes at least one passage listed as relevant in the ground truth. A system that cites nothing scores 0.
 
-Near-duplicate pairs (raw vs hot chicken, plain vs flavoured milk, raw vs roasted almonds, still vs sparkling water) check that the system follows the rule, not the product name.
+The test includes similar products with different GST outcomes, such as raw and hot chicken, plain and flavoured milk, raw and roasted almonds, and still and sparkling water. These pairs help show whether a system follows the GST rule for each case, rather than relying on the product name alone.
 
 All scores were calculated in `GST_results.xlsx`.
