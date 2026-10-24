@@ -1,10 +1,12 @@
 # Baseline — raw response from the no-retrieval LLM
 
-This is the unedited output behind `baseline_results.md`. The 14 questions were asked in one message to a fresh chat with no documents attached, to approximate Condition 1 (no retrieval) of the group's comparison. Scoring against the answer key was done by hand.
+To get a baseline for our comparison, we asked Claude 14 GST questions in a new chat with no documents attached. This was our no-retrieval condition. We scored its answers by hand against our answer key.
 
-- Tool: Claude (new conversation, claude.ai)
+- Tool: Claude (new conversation on claude.ai)
 - Run by: Tejas Gangadhar Gowda (s4235124)
-- Date run: not recorded; web search: not recorded
+- Date run: Not recorded
+- Web search: Not recorded
+- Note: the reply mentions our RAG project, so the chat may have had memory of earlier conversations
 
 ## Prompt (as sent)
 
@@ -44,6 +46,8 @@ These all turn on the same Australian GST basic food rules (GST Act, Schedule 1 
 
 If this is for your RAG GST chatbot project, the ATO's detailed food list (GST food guide) is the primary source you'd want the model grounded in, since a lot of these edge cases (like rice cakes) hinge on marketing/packaging specifics rather than a clean rule.
 
-## How it was scored
+## How we scored it
 
-Under the updated scoring (items 1–13, GST14 separate), the baseline scored 12/13 (92.3%), macro-F1 0.921, attribution 0%. See `baseline_results.md`.
+We checked the answers against our answer key by hand. For the main comparison, we used items 1–13 and reported GST14 separately, because its expected answer was changed from Abstain to GST-free after the baseline was run.
+
+On items 1–13, the baseline got 12 correct out of 13 (92.3%). Its macro-F1 was 0.921, and its attribution score was 0% because it did not cite any specific supporting passages. The results are in `baseline_results.md`.
