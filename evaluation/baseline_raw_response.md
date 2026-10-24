@@ -46,4 +46,4 @@ If this is for your RAG GST chatbot project, the ATO's detailed food list (GST f
 
 ## How it was scored
 
-12 of 14 matched the answer key on GST-free/taxable. Item 12 (still bottled water) disagreed: the model said taxable, the answer key says GST-free. Item 14 was hedged rather than cleanly abstained. The response named "GST Act, Schedule 1" in general terms but cited no specific provision per item, so attribution correctness was 0/14. Note that the model also recommended checking the ATO Detailed Food List, which is what the group's pipeline is grounded in.
+Under the updated scoring (items 1–13, GST14 separate), the baseline scored 12/13 (92.3%), macro-F1 0.921, attribution 0%. See `baseline_results.md`.
