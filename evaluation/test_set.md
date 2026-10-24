@@ -16,13 +16,12 @@
 | 10 | Plain unsalted raw almonds | GST-free | Detailed Food List |
 | 11 | Roasted salted almonds | Taxable | Detailed Food List |
 | 12 | Still bottled water, unflavoured | GST-free | Schedule 2, item 14 |
-| 13 | Sparkling mineral water | Taxable | s 38-3(1)(d), not listed in Schedule 2 (optional, same logic as soft drink) |
-| 14 | Rice cakes (DFL entry 656, under review) | Abstain — contested | Detailed Food List |
+| 13 | Sparkling mineral water | Taxable | s 38-3(1)(d), not listed in Schedule 2 |
+| 14 | Rice cakes | GST-free | Detailed Food List, entry 656 |
 
 ## Revision note (GST14)
 
-The table above is the original test set, as it was when the no-retrieval baseline was run (see `baseline_results.md`).
-
-The group later revised GST14 to "Are rice cakes made principally from compressed cereal GST-free?", expected label **GST-free**. The reason: ATO Detailed Food List entry 656 lists all rice cakes as GST-free, but the ATO's separate guidance (Issue 26) says only rice cakes made principally from compressed cereal are GST-free, and the ATO has said it is reviewing entry 656. The original wording was therefore too broad to have a single correct answer. Rows 1–13 are unchanged.
-
-Status: Test set used as the basis for the group's evaluation (groundtruth GST01–GST14). GST14 revised as described above.
+- GST14 changed from Abstain to GST-free, because ATO Detailed Food List entry 656 lists rice cakes as GST-free. The question wording stayed "Are rice cakes GST-free?".
+- Main scores use items 1–13. GST14 is reported separately.
+- Citations for items 3, 8, 12 and 13 were corrected. No answers changed.
+- The no-retrieval baseline was run on the original version, where GST14 was Abstain.
